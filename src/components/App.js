@@ -10,7 +10,6 @@ function App() {
         setDogImage(data.message);
       });
   }, []);
-  // use an empty dependencies array, so we only run the fetch request ONCE
 
   if (!dogImage) return <p>Loading...</p>;
 
